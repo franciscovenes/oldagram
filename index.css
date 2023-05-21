@@ -1,5 +1,101 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  user-select: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.comment,
+.location {
+  font-weight: 400;
+}
+
+.avatar-img {
+  width: 34px;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c6c6c6;
+  padding: 10px 15px;
+}
+
+.logo-img {
+  width: 130px;
+}
+
+.user-info {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.user-info p {
+  margin: 0;
+}
+
+.location {
+  display: block;
+  font-size: 12px;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.post-details {
+  padding: 20px 10px;
+}
+
+.post-icons {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-icons a {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  text-decoration: none;
+}
+
+.heart-icon {
+  background: url("images/icon-heart.png") center / cover;
+}
+
+.comment-icon {
+  background: url("images/icon-comment.png") center / cover;
+}
+
+.dm-icon {
+  background: url("images/icon-dm.png") center / cover;
+}
+
+.post-icons a:hover {
+  opacity: 0.5;
+}
