@@ -116,7 +116,6 @@ for (let i = 0; i < posts.length; i++) {
 
 function addLike(likesPEl, i) {
   let storageArray = JSON.parse(localStorage.getItem("likes"));
-
   if (storageArray.some((el) => el.username === posts[i].username)) {
     let index = storageArray.findIndex(
       (el) => el.username === posts[i].username
@@ -130,7 +129,7 @@ function addLike(likesPEl, i) {
       count: ++posts[i].likes,
       username: posts[i].username,
     });
-    let newCount = ++posts[i].likes;
+    let newCount = posts[i].likes;
     likesPEl.innerHTML = `${newCount} likes`;
     localStorage.setItem("likes", JSON.stringify(storageArray));
   }
