@@ -33,7 +33,11 @@ p {
   background: #fff;
 }
 
-header {
+.post {
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,7 +81,7 @@ header {
   padding: 0;
 }
 
-.post-icons a {
+.post-icons li {
   display: inline-block;
   width: 22px;
   height: 22px;
@@ -96,6 +100,6 @@ header {
   background: url("images/icon-dm.png") center / cover;
 }
 
-.post-icons a:hover {
+.post-icons li:hover {
   opacity: 0.5;
 }
